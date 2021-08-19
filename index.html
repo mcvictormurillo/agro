@@ -32,7 +32,14 @@
 							</div>
 						</div>
 					</label>
-					<input id="file-upload" type="file" hidden @change="handleFileUploads()" />
+					<input
+						id="file-upload1"
+						type="file"
+						hidden
+						@change="handleFileUploads()"
+						ref="files"
+						multiple
+					/>
 				</div>
 				<div class="d-flex justify-content-center">
 					<div class="d-flex justify-content-center align-items-center customBtn">
@@ -51,11 +58,25 @@
 				<div class="d-flex justify-content-center mt-4">
 					<h1 class="gray">Seleccione archivos</h1>
 				</div>
+
 				<div class="d-flex justify-content-center">
-					<div class="iconFolder d-flex justify-content-center">
-						<img src="./svg/FolderColor.svg" alt="" style="width: 60px; height: 60px" />
-					</div>
+					<label for="file-upload">
+						<div class="d-flex justify-content-center">
+							<div class="iconFolder d-flex justify-content-center">
+								<img src="./svg/FolderColor.svg" alt="" style="width: 60px; height: 60px" />
+							</div>
+						</div>
+					</label>
+					<input
+						id="file-upload"
+						type="file"
+						hidden
+						@change="handleFileUploads()"
+						ref="files"
+						multiple
+					/>
 				</div>
+
 				<div class="d-flex justify-content-center">
 					<div class="d-flex justify-content-center align-items-center customBtn">
 						<img src="./svg/Send.svg" class="sizeSvg" />
