@@ -1,10 +1,13 @@
 	.body {
-				background-color: rgb(245, 244, 249);
+				/* background-color: rgb(245, 244, 249); */
+				background-color: rgb(119, 119, 119);
 			}
 			.bottomNav {
-				position: absolute;
+				position: fixed;
 				padding: 0px;
 				margin: 0px;
+				left: 0px;
+				right: 0px;
 				bottom: 0px;
 				width: 100%;
 				background-color: white;
